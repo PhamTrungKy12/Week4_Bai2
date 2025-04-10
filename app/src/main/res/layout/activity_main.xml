@@ -11,12 +11,13 @@
 
     <View
         android:id="@+id/view2"
-        android:layout_width="match_parent"
-        android:layout_height="317dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
         android:background="@drawable/top_background1"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-2dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/txt_activity_main_title"
@@ -42,6 +43,8 @@
         android:paddingTop="20px"
         android:paddingBottom="20dp"
         android:textSize="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintTop_toBottomOf="@+id/txt_activity_main_title"
         android:layout_height="50dp"
         android:layout_marginTop="35dp"
@@ -55,6 +58,8 @@
         android:textSize="25dp"
         android:drawableStart="@drawable/password"
         android:drawablePadding="20px"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintTop_toBottomOf="@+id/edt_activity_main_email"
         android:layout_marginTop="30dp"
         android:padding="8px"
@@ -65,10 +70,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/facebook_button"
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
         android:backgroundTint="#3B5998"
         android:text="Facebook"
         app:icon="@drawable/facebook"
@@ -78,7 +83,7 @@
         app:layout_constraintTop_toBottomOf="@id/edt_activity_main_password" />
 
     <com.google.android.material.button.MaterialButton
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:textColor="#0000cc"
         android:text="Google"
@@ -104,6 +109,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:gravity="center"
+        android:textStyle="bold"
         android:text="Are you new user?Register?"
         android:textColor="#0000cc"
         android:textSize="20sp"
